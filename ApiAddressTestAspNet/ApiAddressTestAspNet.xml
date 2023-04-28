@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiAddressTestAspNet</name>
+    </assembly>
+    <members>
+        <member name="M:ApiAddressTestAspNet.Controllers.AddressController.GetAddress(System.String)">
+            <summary>
+            Obtem um endereço de acordo com o cep informado
+            </summary>
+            <param name="codezip"></param>
+            <returns></returns>
+            <response code="200">Retorna o endereço relacionado ao CEP informado</response>
+            <response code="404">Endereço informado não localizado!</response>
+        </member>
+        <member name="M:ApiAddressTestAspNet.Controllers.TokenController.Authenticate(ApiAddressTestAspNet.Models.User)">
+            <summary>
+            Gerar Token
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+            <response code="200">Retorna um token</response>
+            <response code="401">Indica falha na autenticação</response>
+        </member>
+    </members>
+</doc>
